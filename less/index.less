@@ -117,8 +117,12 @@ a:hover{
 			.margin();
 			@media @mobile{
 				flex-direction: column;
-				justify-content: center;
+				text-align:center;
+				width:100%;
 				.margin();
+				a{
+					padding-bottom: 2rem;
+				}
 			}
 		}
 	}
@@ -138,6 +142,13 @@ a:hover{
 			width:80%;
 			height: auto;
 			margin: 2rem;
+			@media @mobile{
+				img{
+					max-width:100%;
+					height:auto;
+					align-items: center;
+				}
+			}
 		}
 		.ctatext{
 			width:100%;
