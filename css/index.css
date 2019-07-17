@@ -163,7 +163,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: grey;
+  color: lightgrey;
 }
 .websitewrapper {
   max-width: 800px;

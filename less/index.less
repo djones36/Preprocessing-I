@@ -84,9 +84,9 @@ a{
 	text-decoration: none;
 }
 
-
+@background-color: lightgrey;
 a:hover{
-	color:grey;
+	color:@background-color;
 }
 .margin(){
 	margin:2%;
@@ -117,7 +117,7 @@ a:hover{
 		display:flex;
 		justify-content: center;
 		flex-direction: column;
-		background: lightgrey;
+		background: @background-color;
 		border:1px solid black;
 		
 		.profile-img {
