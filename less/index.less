@@ -70,17 +70,27 @@ h2{
 	font-size:2rem;
 }
 h3{
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 }
 
 p, ul, td {
 	font-size: 1.25rem;
 }
-
+.font(){
+	font-size: 1.85rem;
+}
 a{
 	font-size: 1.85rem;
 	text-decoration: none;
 }
+
+
+a:hover{
+	color:grey;
+}
+.margin(){
+	margin:2%;
+  }
 
 .websitewrapper{
 	max-width: 800px;
@@ -94,8 +104,13 @@ a{
 			display:flex;
 			width:40%;
 			justify-content: space-between;
-			margin: 2%;
+			.margin();
 		}
+	}
+	.top{
+		display:flex;
+		justify-content: center;
+		margin-bottom:2%;
 	}
 	.cta{
 		width:90%;
@@ -112,8 +127,6 @@ a{
 		}
 		.ctatext{
 			width:100%;
-			text-align: center;
-			
 		}
 		button{
 			max-width: 30%;
@@ -122,19 +135,18 @@ a{
 			border-radius: 8%;
 			background-color: rgb(124, 124, 171);
 			font-style: bold;
-			margin: 2%;
+			.margin();
 		}
 		button:hover{
 			background-color: rgb(235, 235, 235);
 			color:blue;
 		}
-
+	} //end of cta
 	
-	}
-}
+} //end of wrapper
 .bottom-content{
 	width: 100%;	
-	margin:2%;
+	.margin();
 
 	table{
 		width: 100%;
@@ -151,3 +163,26 @@ a{
 	}
 }
 
+.middle{
+	border:1px solid red;
+	.middle-content{
+		justify-content: space-around;
+		flex-direction:row;
+		display:flex;
+		.margin();
+		
+		.left-text{
+			width:45%;
+		}
+		.right-content{
+			width:45%;
+			li{
+				width:100%;
+				padding: 1.5rem;
+				border: 1px solid black;
+				.font();
+			}
+		
+		}
+	}
+}
