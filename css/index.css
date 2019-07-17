@@ -135,9 +135,6 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
-.websitewrapper {
-  border: 1px solid red;
-}
 h1,
 h2,
 h3,
@@ -153,7 +150,6 @@ h2 {
 h3 {
   font-size: 1.75rem;
 }
-p,
 ul,
 td {
   font-size: 1.25rem;
@@ -180,6 +176,7 @@ a:hover {
   width: 40%;
   justify-content: space-between;
   margin: 2%;
+  padding: 2%;
 }
 .websitewrapper .top {
   display: flex;
@@ -189,8 +186,8 @@ a:hover {
 .websitewrapper .cta {
   width: 90%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   background: lightgrey;
   border: 1px solid black;
 }
@@ -202,53 +199,66 @@ a:hover {
 .websitewrapper .cta .ctatext {
   width: 100%;
 }
+.websitewrapper .cta .ctatext p {
+  font-size: 1.25rem;
+}
 .websitewrapper .cta button {
   max-width: 30%;
   font-size: 1.75rem;
-  padding: 2%;
   border-radius: 8%;
   background-color: #7c7cab;
   font-style: bold;
   margin: 2%;
+  padding: 2%;
 }
 .websitewrapper .cta button:hover {
   background-color: #ebebeb;
   color: blue;
 }
-.bottom-content {
+.websitewrapper .middle .middle-content {
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+  margin: 2%;
+  padding: 2%;
+}
+.websitewrapper .middle .middle-content .left-text {
+  width: 45%;
+}
+.websitewrapper .middle .middle-content .left-text p {
+  font-size: 1.25rem;
+}
+.websitewrapper .middle .middle-content .right-content {
+  width: 45%;
+}
+.websitewrapper .middle .middle-content .right-content li {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid black;
+  font-size: 1.85rem;
+}
+.websitewrapper .bottom-content {
   width: 100%;
   margin: 2%;
+  padding: 2%;
 }
-.bottom-content table {
+.websitewrapper .bottom-content table {
   width: 100%;
 }
-.bottom-content th {
+.websitewrapper .bottom-content table th {
   text-align: left;
   padding: 1%;
   font-size: 1.35rem;
   font-weight: bold;
 }
-.bottom-content td {
+.websitewrapper .bottom-content table td {
   padding: 2%;
 }
-.middle {
-  border: 1px solid red;
+.websitewrapper footer {
+  background: lightgrey;
+  text-align: center;
+  padding: 2%;
 }
-.middle .middle-content {
-  justify-content: space-around;
-  flex-direction: row;
-  display: flex;
-  margin: 2%;
-}
-.middle .middle-content .left-text {
-  width: 45%;
-}
-.middle .middle-content .right-content {
-  width: 45%;
-}
-.middle .middle-content .right-content li {
-  width: 100%;
-  padding: 1.5rem;
-  border: 1px solid black;
-  font-size: 1.85rem;
+.websitewrapper footer p {
+  font-size: 1.25rem;
 }

@@ -57,9 +57,6 @@ html, body {
 	height: 100%;
 	font-size: 62.5%;
 }
-.websitewrapper{
-	border: 1px solid red;
-}
 h1, h2, h3, p{
 	padding:0 0 2%;
 }
@@ -73,7 +70,7 @@ h3{
 	font-size: 1.75rem;
 }
 
-p, ul, td {
+ ul, td {
 	font-size: 1.25rem;
 }
 .font(){
@@ -83,15 +80,25 @@ a{
 	font-size: 1.85rem;
 	text-decoration: none;
 }
-
+//Variable
 @background-color: lightgrey;
+@fontSize: 1.25rem;
 a:hover{
 	color:@background-color;
 }
+
+//Mixins
 .margin(){
 	margin:2%;
+	padding:2%;
   }
+.flexcolumn(){
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
 
+//
 .websitewrapper{
 	max-width: 800px;
 	margin: auto;
@@ -114,9 +121,8 @@ a:hover{
 	}
 	.cta{
 		width:90%;
-		display:flex;
-		justify-content: center;
-		flex-direction: column;
+		.flexcolumn;
+		
 		background: @background-color;
 		border:1px solid black;
 		
@@ -127,6 +133,9 @@ a:hover{
 		}
 		.ctatext{
 			width:100%;
+			p{
+				font-size: @fontSize;
+			}
 		}
 		button{
 			max-width: 30%;
@@ -142,47 +151,55 @@ a:hover{
 			color:blue;
 		}
 	} //end of cta
-	
-} //end of wrapper
-.bottom-content{
-	width: 100%;	
-	.margin();
-
-	table{
-		width: 100%;
-	}
-	
-	th{
-		text-align: left;
-		padding: 1%;
-		font-size: 1.35rem;
-		font-weight: bold;
-	}
-	td{
-		padding: 2%;
-	}
-}
-
-.middle{
-	border:1px solid red;
-	.middle-content{
-		justify-content: space-around;
-		flex-direction:row;
-		display:flex;
-		.margin();
-		
-		.left-text{
-			width:45%;
-		}
-		.right-content{
-			width:45%;
-			li{
-				width:100%;
-				padding: 1.5rem;
-				border: 1px solid black;
-				.font();
+	.middle{
+		.middle-content{
+			justify-content: space-around;
+			flex-direction:row;
+			display:flex;
+			.margin();
+			
+			.left-text{
+				width:45%;
+				p{
+					font-size: @fontSize;
+				}
 			}
-		
+			.right-content{
+				width:45%;
+				li{
+					width:100%;
+					padding: 1.5rem;
+					border: 1px solid black;
+					.font();
+				}
+			}
+		}
+	}//end of middle
+	.bottom-content{
+		width: 100%;	
+		.margin();
+	
+		table{
+			width: 100%;
+			th{
+				text-align: left;
+				padding: 1%;
+				font-size: 1.35rem;
+				font-weight: bold;
+			}
+			td{
+				padding: 2%;
+			}
+		}
+	} //End of bottom
+	footer{
+		background:@background-color;
+		text-align:center;
+		padding: 2%;
+		p{
+			font-size: @fontSize;
 		}
 	}
-}
+} //end of wrapper
+
+
