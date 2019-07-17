@@ -80,12 +80,14 @@ a{
 	font-size: 1.85rem;
 	text-decoration: none;
 }
-//Variable
-@background-color: lightgrey;
-@fontSize: 1.25rem;
 a:hover{
 	color:@background-color;
 }
+//Variable
+@background-color: lightgrey;
+@fontSize: 1.25rem;
+@mobile: ~"(max-width: 500px)";
+
 
 //Mixins
 .margin(){
@@ -107,11 +109,17 @@ a:hover{
 		display:flex;
 		flex-direction: row;
 		justify-content:flex-end;
+		
 		nav{
 			display:flex;
 			width:40%;
 			justify-content: space-between;
 			.margin();
+			@media @mobile{
+				flex-direction: column;
+				justify-content: center;
+				.margin();
+			}
 		}
 	}
 	.top{

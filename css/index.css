@@ -178,6 +178,14 @@ a:hover {
   margin: 2%;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .websitewrapper header nav {
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+  }
+}
 .websitewrapper .top {
   display: flex;
   justify-content: center;
