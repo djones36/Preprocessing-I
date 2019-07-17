@@ -204,6 +204,8 @@ a:hover {
   justify-content: center;
   background: lightgrey;
   border: 1px solid black;
+  margin: 2%;
+  padding: 2%;
 }
 .websitewrapper .cta .profile-img {
   width: 80%;
