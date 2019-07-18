@@ -79,15 +79,17 @@ h3{
 a{
 	font-size: 1.85rem;
 	text-decoration: none;
+	&:hover{
+		color:@background-color;
+	}
 }
-a:hover{
-	color:@background-color;
-}
+
 //Variable
 @background-color: lightgrey;
 @fontSize: 1.25rem;
 @largeFont: 2rem;
 @mobile: ~"(max-width: 500px)";
+@fontstack: 'Bahianita', cursive;
 
 
 //Mixins
@@ -123,7 +125,7 @@ a:hover{
 				.margin();
 				a{
 					padding-bottom: 2rem;
-					font-family: 'Bahianita', cursive;
+					font-family: @fontstack;
 					font-size: 4rem;
 				}
 			}
@@ -147,6 +149,7 @@ a:hover{
 			margin: 2rem;
 			img{
 				max-width:94%;
+				max-height: auto;
 			}
 			.flexcolumn();
 			@media @mobile{

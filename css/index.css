@@ -217,6 +217,7 @@ a:hover {
 }
 .websitewrapper .cta .profile-img img {
   max-width: 94%;
+  max-height: auto;
 }
 @media (max-width: 500px) {
   .websitewrapper .cta .profile-img img {
