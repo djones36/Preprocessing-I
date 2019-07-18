@@ -1,1 +1,294 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0 0 2%;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+ul,
+td {
+  font-size: 1.25rem;
+}
+a {
+  font-size: 1.85rem;
+  text-decoration: none;
+}
+a:hover {
+  color: lightgrey;
+}
+.websitewrapper {
+  max-width: 800px;
+  margin: auto;
+}
+.websitewrapper header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.websitewrapper header nav {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin: 2%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .websitewrapper header nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 2%;
+    padding: 2%;
+  }
+  .websitewrapper header nav a {
+    padding-bottom: 2rem;
+    font-family: 'Bahianita', cursive;
+    font-size: 4rem;
+  }
+}
+.websitewrapper .top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.websitewrapper .cta {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: lightgrey;
+  border: 1px solid black;
+  margin: 2%;
+  padding: 2%;
+}
+.websitewrapper .cta .profile-img {
+  width: 100%;
+  height: auto;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.websitewrapper .cta .profile-img img {
+  max-width: 94%;
+  max-height: auto;
+}
+@media (max-width: 500px) {
+  .websitewrapper .cta .profile-img img {
+    max-width: 90%;
+    height: auto;
+    align-items: center;
+  }
+}
+.websitewrapper .cta .ctatext {
+  width: 100%;
+}
+.websitewrapper .cta .ctatext p {
+  font-size: 1.25rem;
+}
+.websitewrapper .cta button {
+  max-width: 30%;
+  font-size: 1.75rem;
+  border-radius: 8%;
+  background-color: #7c7cab;
+  font-style: bold;
+  margin: 2%;
+  padding: 2%;
+}
+.websitewrapper .cta button:hover {
+  background-color: #ebebeb;
+  color: blue;
+}
+.websitewrapper .middle .middle-content {
+  justify-content: space-around;
+  flex-direction: row;
+  display: flex;
+  margin: 2%;
+  padding: 2%;
+}
+.websitewrapper .middle .middle-content .left-text {
+  width: 45%;
+}
+.websitewrapper .middle .middle-content .left-text p {
+  font-size: 1.25rem;
+}
+.websitewrapper .middle .middle-content .right-content {
+  width: 45%;
+}
+.websitewrapper .middle .middle-content .right-content li {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid black;
+  font-size: 1.85rem;
+}
+.websitewrapper .bottom-content {
+  width: 100%;
+  margin: 2%;
+  padding: 2%;
+}
+.websitewrapper .bottom-content table {
+  width: 100%;
+}
+.websitewrapper .bottom-content table th {
+  text-align: left;
+  padding: 1%;
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+.websitewrapper .bottom-content table td {
+  padding: 2%;
+}
+.websitewrapper footer {
+  background: lightgrey;
+  text-align: center;
+  padding: 2%;
+}
+.websitewrapper footer p {
+  font-size: 2rem;
+}
