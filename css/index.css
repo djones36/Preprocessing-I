@@ -208,13 +208,19 @@ a:hover {
   padding: 2%;
 }
 .websitewrapper .cta .profile-img {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.websitewrapper .cta .profile-img img {
+  max-width: 94%;
 }
 @media (max-width: 500px) {
   .websitewrapper .cta .profile-img img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     align-items: center;
   }
